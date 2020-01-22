@@ -1,10 +1,11 @@
 body {
     background-image: url("img/bg.png");
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     opacity: 1;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
 }
 .index{
    display: flex;
@@ -34,7 +35,7 @@ body {
     font-family: Roboto-Light;
     width: 30%;
     margin-top: 50px;
-    padding: 30px;
+    padding: 20px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 14px #00000022;
     text-align: left;
@@ -47,7 +48,7 @@ body {
     top: 100px;
     left: 888px;
     width: 90%;
-    height: 25px;
+    height: 20px;
     border: 1px solid #DADADA;
     border-radius: 3px;
     opacity: 1;
@@ -67,18 +68,21 @@ input:focus {
     background-color: #00000022;
 }
 button{
-    font-family: Roboto-Light;
-    text-align: justify;
-    letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
-    font-size: 18px;
-    background: #00B8B0 0% 0% no-repeat padding-box;
-    margin-left: 20%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-right: 8%;
-    padding-left: 8%;
+    background: #00B8B0 015% 15% no-repeat padding-box;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+#btn{
+    font-family: Roboto-Medium;
+    font-size: 15px;
+    letter-spacing: 0;
+    width: 67%;
+    margin-left: 15%;
+    margin-right: auto;
 }
 button:hover{
     background-color: aquamarine;
@@ -88,8 +92,9 @@ button:active{
 }
 .social{
     display: flex;
-    margin-top: 30px;
-    width: 87%;
+    margin-top: 40px;
+
+    width: 86%;
     justify-content: flex-end;
 }
 .facebook{
@@ -118,11 +123,12 @@ button:active{
 }
 @media(max-width: 800px){
     body{
-        height: auto;    
+        height: auto; 
+        margin: unset;
     }
     .index{
-        flex-direction: column;
         height: auto;
+        flex-direction: column;
     }
     .container1{
          width: 90%;
@@ -144,6 +150,9 @@ button:active{
         margin-top: 5px;
         margin-right: auto;
         margin-bottom: 14px;
+    }
+    .btn{
+        font-size: 12px;
     }
     .social{
         flex-direction: row;
