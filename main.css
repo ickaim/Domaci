@@ -96,6 +96,7 @@ button:active{
     width: 90%;
     justify-content: flex-end;
     margin-bottom: 30px;
+    position: absolute;
 }
 .facebook{
     padding-right: 12px;
@@ -157,6 +158,7 @@ button:active{
     }
     .social{
         flex-direction: row;
+        position: relative;
     }
 }
 @font-face{
