@@ -100,10 +100,17 @@ button:active{
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top: 1;
+   /* top: 1; ne mozes samo da sta1, ovo je nevazece, moras piksele ili %  */
     bottom: 0;
+
+    /* po dizajnu imas da ti je bottom na 30px, to treba da ispravis */
     right: 140px;
+    
+     /* forma i ovaj div moraju da ti budu na istom rastojanju od desne strane, pa ili ih stavi isti % 
+    ili na container u koji su oboje stavi padding pa njima dodijeli position relative i right 0*/
 }
+
+
 .facebook{
     padding-right: 12px;
 }
